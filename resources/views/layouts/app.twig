@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Viewport Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Styles -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Mobile Theme Colour -->
+
+    <meta name="theme-color" content="#1f425d">
+
+    <!-- Title and Description -->
+
+    <title>Summit Electric Products Ltd. | {% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="keywords" content="summit electric, summit, summit products, electric products, electric products windsor, marathon, marathon special products, steel electric, steelelectric, autac, re-trak-tul kords, gibson, gibson stainless, linemaster, foot switch, r. s. dale, construction, construction supplies, sparksafe, spark safe, electrical products, trilite, nsi, nsi industries, klein tools, klein, spemco, pylon, electrical tapes, pylon electrical tapes, picoma, international, international metal hose company, metal hoses, rees, beam clamps, bends, nipples, couplings, control switches, emt fittings, explosion proof fittings, flexible conduit, connectors, foot switches, fuse holders, groundings and insulators, heat shrink, heat shrink products, dock lighting, dock lighting products, sealtite connectors, power distribution blocks, personal heating products, retractile cords, rigid fittings, speacialty switches, stainless steel fittings, train relief connectors, strut fittings, tapes, terminal blocks, termination lugs, sleeves, termination sleeves, thread adapters, wire mesh grips">
+
+    <!-- Favicons -->
+
+    <link rel="icon" href="assets/img/fav.png">
+    
+    <!-- Open Graph -->
+
+    <meta property="og:title" content="Summit Electric Products Ltd.">
+    <meta property="og:description" content="Welcome to Summit Electric Products Ltd. Our customers' satisfaction is priority one. We specialize in supplying the electrical industry through distribution across Canada. We're know for our commitment to Same Day Shipping, holding Minimum Order of Only $10 and No Minimum Quantities.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="summit-electric.com">
+    <meta property="og:site_name" content="Summit Electric Products Ltd.">
+    <meta property="og:image" content="assets/img/og.jpg">
+    
+
+    <!--[if lt IE 9]>
+     <script src="js/polyfill/html5-shiv.js"></script>
+  <![endif]-->
+
+
+</head>
+<body>
+    {% include 'partials/off-canvas.twig' %}
+    <div class="{% block pageclass %}{% endblock %}" id="app">
+            <div class="content">
+                {% include 'partials/overlay.twig' %}
+                {% include 'partials/header.twig' %}
+                {% block content %}{% endblock %}
+                {% include 'partials/footer.twig' %}
+            </div>
+    </div>
+
+    {# google maps api #}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh7XTl1JjpHT4_fHQ2va9GzRfCif1_Skw"></script>
+    <script src="/assets/js/app.js"></script>
+
+    {# Mister Sandman...sand me a man... #}
+</body>
+</html>

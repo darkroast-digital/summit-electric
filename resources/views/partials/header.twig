@@ -1,0 +1,32 @@
+<header>
+        <div class="welcome-bar">
+            <p>Welcome - Summit Electric Products Ltd</p>
+        </div>
+        <div class="header-bar container">
+        <div class="column-3">
+            <a href="{{ path_for('home') }}">
+                <img src="/assets/img/summitLOGO.png" alt="Summit Electric Products Limited logo">
+            </a>
+        </div>
+        <div class="column-9">
+            <div class="details">
+                <div class="location">
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Summit Electric Products Limited</p>
+                    <p><span>3333 Devon Dr, Windsor ON. N8X4L5</span></p>
+                </div>
+                <div class="phone">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> Call us.</p>
+                    <p><span>1.800.265.4822</span></p>
+                </div>
+            </div>
+            <ul class="nav__navbar is--active">
+                <li><a href="{{ path_for('home') }}" class="{% if current_path == path_for('home') %}is-active{% endif %}">Home</a></li>
+                <li><a href="{{ path_for('product-lines') }}" class="{% if current_path == path_for('product-lines') %}is-active{% endif %}">Product Lines</a></li>
+                <li><a href="{{ path_for('catalog') }}" class="{% if current_path == path_for('catalog') %}is-active{% endif %}">Catalog</a></li>
+                <li><a href="{{ path_for('sales-reps') }}" class="{% if current_path == path_for('sales-reps') %}is-active{% endif %}">Sales Reps</a></li>
+                <li><a href="{{ path_for('contact') }}" class="{% if current_path == path_for('contact') %}is-active{% endif %}">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    {% include 'partials/hamburger.twig' %}
+</header>

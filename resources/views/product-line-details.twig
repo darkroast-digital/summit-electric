@@ -1,0 +1,43 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Product Line: {{ item.name }}{% endblock %}
+{% block description %}Welcome to Summit Electric Products Ltd. Our customers' satisfaction is priority one. We specialize in supplying the electrical industry through distribution across Canada. We're know for our commitment to Same Day Shipping, holding Minimum Order of Only $10 and No Minimum Quantities.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>{{ item.title }}</h1>
+            <p>{{ item.subtitle }}</p>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>{{ item.title }}</li>
+        </ul>
+    </div>
+</section>
+
+<section class="product-details">
+    <div class="content-container">
+        <div class="product-details__container container">
+            <div class="img-container column-3">
+                <img src="../assets/img/{{ item.image }}.png" alt="{{ item.image_alt }}">
+            </div>
+
+            <div class="content-container column-9">
+                <h1>{{ item.name }}</h1>
+                <h2>{{ item.details }}</h2>
+                <a href="{{ item.url }}" target="_blank">{{ item.link_title }}</a>
+                
+                <div class="content">
+                    {{ content | raw }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

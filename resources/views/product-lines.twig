@@ -1,0 +1,144 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Product Lines{% endblock %}
+{% block description %}Summit Electric carries a wide variety of product lines, including Marathon, SteelElectric, Autac, Plymouth, Gibson Stainless, and many more.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>Product Lines</h1>
+            <p>Our trusted partners</p>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>Product Lines</li>
+        </ul>
+    </div>
+</section>
+
+<section class="product-lines">
+    <div class="content-container container">
+        <h2>Our Product Lines</h2>
+        <div class="product-lines__container container container--full">
+            <div class="column-6">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'marathon' } ) }}">
+                        <img src="assets/img/marathon2.png" alt="Marathon Special Products">
+                    </a>
+                </div>
+            </div>
+            <div class="column-6">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'steelelectric' } ) }}">
+                        <img src="assets/img/steel2.png" alt="Steel Electric Products">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'autac' } ) }}">
+                        <img src="assets/img/autac.png" alt="Autac Re-Trak-Tul Kords">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'plymouth' } ) }}">
+                        <img src="assets/img/plymouth.png" alt="Plymouth">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'gibson' } ) }}">
+                        <img src="assets/img/gibson.png" alt="Gibson Stainless &amp; Specialty Inc.">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'linemaster' } ) }}">
+                        <img src="assets/img/linemaster.png" alt="Linemaster - America's Foot Switch Leader">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product rsdale">
+                    <a href="{{ path_for('product', { slug: 'rsdale' } ) }}">
+                        <img src="assets/img/RS-Dale-Logo-ALTERED.jpg" alt="R.S. Dale Co. Inc. Construction supplies">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'sparksafe' } ) }}">
+                        <img src="assets/img/sparksafe.png" alt="Spark Safe Electrical Products">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'trilite' } ) }}">
+                        <img src="assets/img/trilite.png" alt="Tri-Lite">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'nsi' } ) }}">
+                        <img src="assets/img/nsi.png" alt="NSI Industries">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'spemco' } ) }}">
+                        <img src="assets/img/spemco.png" alt="Specialties Manufacturing Company Inc.">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'plyon' } ) }}">
+                        <img src="assets/img/plyon.png" alt="Plyon Electrical Tapes">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'picoma' } ) }}">
+                        <img src="assets/img/picoma.png" alt="Picoma JMC Steel Group">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'international' } ) }}">
+                        <img src="assets/img/intl.png" alt="International Metal Hose Company">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product">
+                    <a href="{{ path_for('product', { slug: 'rees' } ) }}">
+                        <img src="assets/img/rees1.png" alt="Rees">
+                    </a>
+                </div>
+            </div>
+            <div class="column-3">
+                <div class="product cozy">
+                    <a href="{{ path_for('product', { slug: 'cozy' } ) }}">
+                        <img src="assets/img/New-2017-Cozy-Logo.png" alt="Cozy Products">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

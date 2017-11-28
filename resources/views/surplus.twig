@@ -1,0 +1,44 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}New Surplus Inventory Division{% endblock %}
+{% block description %}Summit Electric has a vast inventory of surplus electrical material from several manufacturers such as Appleton, Burndy, Crouse Hinds, Hubbell, Power-strut, OZ/Gedney and Thomas &amp; Betts. Our extensive inventory of surplus material consists of new and left over material from a variety of our trusted product partners, with many of these items in their original factory packaging.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>New Surplus Inventory Division</h1>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>New Surplus Inventory Division</li>
+        </ul>
+    </div>
+</section>
+
+<section class="surplus">
+    <div class="content-container">
+        <div class="surplus__container container">
+            <div class="column-7">
+                <p>Summit Electric has a vast inventory of surplus electrical material from several manufacturers such as Appleton, Burndy, Crouse Hinds, Hubbell, Power-strut, OZ/Gedney and Thomas &amp; Betts. Our extensive inventory of surplus material consists of new and left over material from a variety of our trusted product partners, with many of these items in their original factory packaging.</p>
+                <p>Also as a Summit Electric Products client, your access to surplus inventory is not limited only to what is in our warehouse. We can also provide access to an abundance of surplus material from the United States as well. And as an experienced and reliable importer, sourcing surplus material is as simple as giving us a call.</p>
+            </div>
+            <div class="column-5">
+                <img src="assets/img/WH3small.jpg" alt="Surplus inventory products warehouse" class="modal__trigger">
+            </div>
+        </div>
+
+        <div class="lightbox">
+            <div class="lightbox_content">
+                <img src="">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

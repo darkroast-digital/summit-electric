@@ -1,0 +1,52 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Featured Products{% endblock %}
+{% block description %}Gibson Stainless Steel products are featured this month at Summit Electric.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>Featured Products</h1>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>Featured Products</li>
+        </ul>
+    </div>
+</section>
+
+<section class="featured-products">
+    <div class="content-container">
+        <div class="featured-products__container container">
+            <div class="column-7">
+                <h2>This Month's Featured Product</h2>
+                <h3>Gibson Stainless Steel Products</h3>
+                <p><strong>These products include:</strong></p>
+                <ul>
+                    <li>Beam Clamps</li>
+                    <li>Conduit</li>
+                    <li>Conduit Bends, Couplings and Nipples &amp; Conduit Bodies</li>
+                    <li>Conduit Hangers</li>
+                    <li>Device Boxes</li>
+                    <li>Hardware</li>
+                    <li>Hubs</li>
+                    <li>Pipe Straps</li>
+                    <li>Reducing Bushings</li>
+                    <li>Strut Fittings</li>
+                    <li>Three Piece Couplings</li>
+                    <li>U-Bolts</li>
+                </ul>
+                <p><a href="{{ path_for('catalog') }}">See Catalog</a></p>
+            </div>
+            <div class="column-5">
+                <img src="assets/img/gibson_stainless1.jpg" alt="Gibson Stainless Steel products">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

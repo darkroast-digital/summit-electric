@@ -1,0 +1,105 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Contact Us{% endblock %}
+{% block description %}Welcome to Summit Electric Products Ltd. Our customers' satisfaction is priority one. We specialize in supplying the electrical industry through distribution across Canada. We're know for our commitment to Same Day Shipping, holding Minimum Order of Only $10 and No Minimum Quantities.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="content-container">
+        <div class="map__container container container--full">
+            <div id="map"></div>
+        </div>
+
+        <div class="contact__container container">
+            <div class="contact-info column-3">
+                <div class="contact-info__content">
+                    <h3>Contact Information</h3>
+                    <h4>Summit Electric Products Limited</h4>
+                    <p>3333 Devon Drive <br/>
+                    Windsor, ON N8X 4L5</p>
+                    <p>1-800-265-4822<br/>
+                    Fx:  519-250-8389<br/>
+                    sales@summit-electric.com</p>
+                </div>
+                <div class="hours__content">
+                    <h3>Business Hours</h3>
+                    <div class="hours day-1">
+                        <p>Monday</p>
+                        <p>8:00 - 4:45</p>
+                    </div>
+                    <div class="hours day-2">
+                        <p>Tuesday</p>
+                        <p>8:00 - 4:45</p>
+                    </div>
+                    <div class="hours day-3">
+                        <p>Wednesday</p>
+                        <p>8:00 - 4:45</p>
+                    </div>
+                    <div class="hours day-4">
+                        <p>Thursday</p>
+                        <p>8:00 - 4:45</p>
+                    </div>
+                    <div class="hours day-5">
+                        <p>Friday</p>
+                        <p>8:00 - 4:30</p>
+                    </div>
+                    <div class="hours day-6">
+                        <p>Saturday</p>
+                        <p>CLOSED</p>
+                    </div>
+                    <div class="hours day-0">
+                        <p>Sunday</p>
+                        <p>CLOSED</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form__container column-9">
+                <h2>Email Us</h2>
+                <form action="{{ path_for('home') }}" method="post" class="contact-form form">
+                    <div class="container container--full">
+                        <div class="column-4">
+                            <input type="text" name="name" id="name" placeholder="Name" required="required">
+                        </div>
+                        <div class="column-4">
+                            <input type="text" name="company" id="company" placeholder="Company">
+                        </div>
+                        <div class="column-4"></div>
+                        <div class="column-4">
+                            <input type="email" name="email" id="email" placeholder="E-mail address" required="required">
+                        </div>
+                        <div class="column-4">
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="column-4"></div>
+                        <div class="column-8">
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="column-4"></div>
+                        <div class="column-12">
+                            <textarea name="message" id="message" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <button class="button submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

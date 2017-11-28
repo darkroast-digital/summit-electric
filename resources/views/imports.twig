@@ -1,0 +1,45 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Specialty Imports Division{% endblock %}
+{% block description %}Summit Electric specializes in finding hard to get and obsolete electrical items. We import electrical items from the USA daily. Importing items from the USA can be a challenge. Duty, freight, currency exchange, brokerage and not to mention method of payment can be both time consuming and costly. We will search the USA for the item you require and then quote you in NET Canadian dollars. All import related charges, duty, exchange etc. are included.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>Specialty Imports Division</h1>
+            <p>Summit Electric specializes in finding hard to get and obsolete electrical items.</p>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>Specialty Imports Division</li>
+        </ul>
+    </div>
+</section>
+
+<section class="imports">
+    <div class="content-container">
+        <div class="imports__container container">
+            <div class="column-6">
+                <p><strong>Summit Electric specializes in finding hard to get and obsolete electrical items.</strong> Often you may find yourself in a situation where you have a requirement from a manufacturer that you have never heard of or are not authorized to purchase from. This is where we can help. You can trust in our years of experience importing items from international sources.</p>
+                <p>We import electrical items from the USA daily. Importing items from the USA can be a challenge. Duty, freight, currency exchange, brokerage and not to mention method of payment can be both time consuming and costly. We will search the USA for the item you require and then quote you in NET Canadian dollars. All import related charges, duty, exchange etc. are included. In addition we will handle all the required customs work. Letting Summit Electric handle your imports both frees up your time and lets you know your true landed cost.</p>
+                <p>The only work you need to do is contact us.</p>
+            </div>
+            <div class="column-6">
+                <img src="assets/img/6.jpg" alt="Forklift with imported products in warehouse" class="modal__trigger">
+            </div>
+        </div>
+        <div class="lightbox">
+            <div class="lightbox_content">
+                <img src="">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

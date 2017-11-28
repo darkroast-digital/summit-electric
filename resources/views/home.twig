@@ -1,0 +1,247 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Home{% endblock %}
+{% block description %}Welcome to Summit Electric Products Ltd. Our customers' satisfaction is priority one. We specialize in supplying the electrical industry through distribution across Canada. We're know for our commitment to Same Day Shipping, holding Minimum Order of Only $10 and No Minimum Quantities.{% endblock %}
+
+{% block content %}
+ 
+<!-- Hero content -->
+<section class="hero">
+    <div class="hero-carousel">
+        <div class="slide">
+            <img src="assets/img/banner10.jpg" alt="Outside view of Summit Electric building">
+            <div class="slide-content">
+                <h1>Welcome to Summit Electric Products Limited</h1>
+                <p>Our customers' satisfaction is priority one.</p>
+                <a href="{{ path_for('about') }}" class="button">More About Us</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/img/banner7.jpg" alt="Multiple Picoma conduit fitting">
+            <div class="slide-content">
+                <h1>We take orders of all sizes</h1>
+                <p>No Minimum quantity and our minimum billing is only $10</p>
+                <a href="{{ path_for('contact') }}" class="button">Contact An Agent</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="assets/img/banner12.jpg" alt="Summit Electric products warehouse">
+            <div class="slide-content">
+                <h1>YOUR LINK TO UNLIMITED INVENTORY</h1>
+                <p>Access to extensive inventories of surplus material in Canada and the U.S is only a phone call away.</p>
+                <a href="{{ path_for('product-lines') }}" class="button">Link to Page</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Hero -->
+
+<!-- Overview content -->
+
+<section class="overview">
+    <div class="site-overview">
+        <div class="site-overview__container container">
+            <div class="about-us column-3">
+                <div class="overview-object__container">
+                    <div class="img-container">
+                        <a href="{{ path_for('about') }}"><img src="assets/img/bridge.jpg" alt="Sun setting over the Detroit river"></a>
+                    </div>
+                    <h4><a href="{{ path_for('about') }}">About Us</a></h4>
+                    <p>Located in Windsor, Ontario just across the border from Detroit, Michigan. We specialize in supplying the electrical industry through distribution across Canada. We're know for our commitment to Same Day Shipping, holding Minimum Order of Only...</p>
+                    <p><a href="{{ path_for('about') }}">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+
+            <div class="standard-products column-3">
+                <div class="overview-object__container">
+                    <div class="img-container">
+                        <a href="{{ path_for('standard') }}"><img src="assets/img/featured.jpg" alt="Marathon fuse holders terminal blocks"></a>
+                    </div>
+                    <h4><a href="{{ path_for('standard') }}">Standard Products Division</a></h4>
+                    <p>At Summit Electric we serve as a Canadian distribution centre for many U.S Manufacturers. In doing so, we provide the customer service, warehousing and logistics for all of our U.S. partners. We pride ourselves in our commitment to...</p>
+                    <p><a href="{{ path_for('standard') }}">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+
+            <div class="specialty-imports column-3">
+                <div class="overview-object__container">
+                    <div class="img-container">
+                        <a href="{{ path_for('imports') }}"><img src="assets/img/imports1-300x200.jpg" alt="Specialty Imports Division"></a>
+                    </div>
+                    <h4><a href="{{ path_for('imports') }}">Specialty Imports Division</a></h4>
+                    <p>Summit Electric specializes in finding hard to get and obsolete electrical items. Often you may find yourself in a situation where you have a requirement from a manufacturer that you have never heard of or are not authorized to purchase...</p>
+                    <p><a href="{{ path_for('imports') }}">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+
+            <div class="new-surplus column-3">
+                <div class="overview-object__container">
+                    <div class="img-container">
+                        <a href="{{ path_for('surplus') }}"><img src="assets/img/surplus1-300x200.jpg" alt="Surplus inventory products warehouse"></a>
+                    </div>
+                    <h4><a href="{{ path_for('surplus') }}">New Surplus Inventory Division</a></h4>
+                    <p>Summit Electric has a vast inventory of surplus electrical material from several manufacturers such as Appleton, Burndy, Crouse Hinds, Hubbell, Power-strut, OZ/Gedney and Thomas &amp; Betts. Our extensive inventory of surplus material...</p>
+                    <p><a href="{{ path_for('surplus') }}">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="products-overview">
+        <div class="products-overview__container container">
+            <div class="header-container">
+                <h2>This Month's Featured Product</h2>
+            </div>
+                <div class="featured-product__container container container--full">
+                    <div class="column-4 img-container">
+                        <img src="assets/img/gibson_stainless1.jpg" alt="Gibson Stainless Steel products">
+                    </div>
+                    <div class="column-8 product-info">
+                        <h5>Gibson Stainless Steel Products S</h5>
+                        <p>Gibson Stainless &amp; Specialty Inc. designs and manufactures a variety of stainless steel products to meet the needs of customers demanding corrosion resistant, high strength parts.</p>
+                        <a href="{{ path_for('featured') }}">Find out more</a>
+                    </div>
+                </div>
+            
+
+            <div class="our-products__container container container--full">
+                <div class="header-container">
+                    <h2>Our Product Lines</h2>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'marathon' } ) }}">
+                        <img src="assets/img/marathon2.png" alt="Marathon Special Products">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'plymouth' } ) }}">
+                        <img src="assets/img/plymouth.png" alt="Plymouth">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'steelelectric' } ) }}">
+                        <img src="assets/img/steel2.png" alt="Steel Electric Products">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'gibson' } ) }}">
+                        <img src="assets/img/gibson.png" alt="Gibson Stainless and Specialty Inc.">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'linemaster' } ) }}">
+                        <img src="assets/img/linemaster.png" alt="Linemaster - America's Foot Switch Leader">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'rsdale' } ) }}">
+                        <img src="assets/img/RS-Dale-Logo-ALTERED.png" alt="R.S. Dale Co. Inc. Construction Supplies">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'sparksafe' } ) }}">
+                        <img src="assets/img/sparksafe.png" alt="Spark Safe Electrical Products">
+                    </a>
+                </div>
+                <div class="product-line column-3">
+                    <a href="{{ path_for('product', { slug: 'trilite' } ) }}">
+                        <img src="assets/img/trilite.png" alt="Tri-Lite">
+                    </a>
+                </div>
+                <p><a href="{{ path_for('product-lines') }}">More Product Lines <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="warehouse-overview">
+        <div class="warehouse-overview__container container">
+            <div class="warehouse-content column-6">
+                <div class="header-container">
+                    <h3>Our Warehouse</h3>
+                </div>
+                <p>We take pride in keeping a large inventory. With over 10,000 SKU’s in our 25,000 square foot facility, we can ship the products you require fast.</p>
+            </div>
+            <div class="warehouse-imgs column-6">
+                <div class="container container--full">
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WH2small.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WHsmall.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WH3small.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WH6small.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WH5small.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                    <div class="img-thumb column-4">
+                        <img src="assets/img/WH4small.jpg" alt="Summit Electric Products warehouse" class="modal__trigger">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox">
+        <div class="lightbox_content">
+            <img src="">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </div>
+
+    <div class="team-overview">
+        <div class="team-overview__container container">
+            <div class="team-content column-6">
+                <div class="header-container">
+                    <h3>Our Sales Team</h3>
+                </div>
+                <p>With over 100 years combined experience, our knowledgeable customer service staff along with our nation wide network of sales partners can help you get the right products.</p>
+                <a href="{{ path_for('sales-reps') }}">Find a Sales Rep <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="quote-content column-6">
+                <h4>Request A Quote</h4>
+                <p>Need a quick quote? Submit a request and one of our professional sales representatives will get back to you as soon as possible.</p>
+                <form class="quote-request form" action="{{ path_for('home') }}" method="post">
+                    <div class="input-container">
+                        <input type="text" name="name" id="name" placeholder="Name" required="required">
+                        <input type="text" name="email" id="email" placeholder="E-mail" required="required">
+                        <input type="text" name="company" id="company" placeholder="Company">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea name="message" id="message" placeholder="Message"></textarea> 
+                    </div>
+                    <div class="button-container">
+                        <button class="submit button" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="represent-quote">
+        <div class="represent-quote__container container">
+            <h1>What We Represent</h1>
+            <h2>Greg Dominato, President</h2>
+            <h3>Our customers' satisfaction is priority one. We strive to exceed our customer’s expectations in every respect and we will continue to provide superior service before and after the sale.</h3>
+            <img src="assets/img/greg.png" alt="Greg Dominato, President">
+        </div>
+    </div>
+
+    <div class="contact-bar">
+        <div class="contact-bar__container container">
+            <h2>Have questions about our products?</h2>
+            <a href="{{ path_for('contact') }}" class="button">Contact Our Sales Team</a>
+        </div>
+    </div>
+    
+</section>
+
+<!-- End Site-Overview content -->
+
+{% endblock %}

@@ -1,0 +1,108 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}About Us{% endblock %}
+{% block description %}Summit Electric is located in Windsor, Ontario just across the border from Detroit, Michigan. We  started in 1980 with two employees working out of a tiny warehouse buying surplus electrical fittings and reselling them to electrical distributors. Here we are all those years later with twelve employees selling our products nationally from our twenty five thousand square foot warehouse.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>About Us</h1>
+            <p>Summit Electrical Supply - Who we are.</p>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>About Us</li>
+        </ul>
+    </div>
+</section>
+
+<section class="about">
+    <div class="content-container">
+        <div class="about__container container">
+            <div class="header-img column-12">
+                <img src="assets/img/banner9.jpg" alt="Summit Electric Building">
+            </div>
+
+            <div class="column-6">
+                <h2>Our History</h2>
+                <p>Summit Electric is located in Windsor, Ontario just across the border from Detroit, Michigan. We  started in 1980 with two employees working out of a tiny warehouse buying surplus electrical fittings and reselling them to electrical distributors. Here we are all those years later with twelve employees selling our products nationally from our twenty five thousand square foot warehouse.</p>
+                <h2>What We Do</h2>
+                <p>We pride ourselves in our commitment to <strong>Same Day Shipping</strong>, holding <strong>Minimum Order of Only $10</strong> and <strong>No Minimum Quantities.</strong></p>
+                <p>We are an industry leading supplier of electrical material from the United States; we provide our clients with warehousing, customer service and logistics. We also provide our clients with an excellent team of electrical manufacturer representatives in all provinces. </p>
+                <p>Although we have extensive national and international distribution partnerships , our core focus is on servicing distributors in Canada only. We sell exclusively to the electrical wholesale distribution network throughout the country. However, we are always pursuing new opportunities to develop new partnerships and expand our service areas.</p>
+            </div>
+
+            <div class="column-6">
+                <img src="assets/img/21.jpg" alt="Marathon fuse holders terminal blocks" class="modal__trigger">
+                <img src="assets/img/10.jpg" alt="Summit Electrical Products warehouse" class="modal__trigger">
+            </div>
+        </div>
+
+        <div class="team__container container">
+            <h2>Meet Our Team</h2>
+            <div class="team-member__container container container--full">
+            <div class="team-member column-6">
+                <img src="assets/img/2.jpg" alt="Greg Dominato, President" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Greg Dominato</h2>
+                    <h3>President</h3>
+                </div>
+            </div>
+
+            <div class="team-member column-6">
+                <img src="assets/img/1.jpg" alt="Mike Gurniak, Vice President" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Mike Gurniak</h2>
+                    <h3>Vice President</h3>
+                </div>
+            </div>
+
+            <div class="team-member column-6">
+                <img src="assets/img/5.jpg" alt="Neil Gregg, Customer Service Representative" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Neil Gregg</h2>
+                    <h3>Customer Service Representative</h3>
+                </div>
+            </div>
+
+            <div class="team-member column-6">
+                <img src="assets/img/3.jpg" alt="Jamie Campbell, Customer Service Representative" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Jamie Campbell</h2>
+                    <h3>Customer Service Representative</h3>
+                </div>
+            </div>
+
+            <div class="team-member column-6">
+                <img src="assets/img/41.jpg" alt="Dan Janik, Purchasing" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Dan Janik</h2>
+                    <h3>Purchasing</h3>
+                </div>
+            </div>
+
+            <div class="team-member column-6">
+                <img src="assets/img/6-fixed.jpg" alt="Jenny Delmore, Administrative Assistant - Accounting" class="modal__trigger">
+                <div class="team-member__info">
+                    <h2>Jenny Delmore</h2>
+                    <h3>Administrative Assistant - Accounting</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="lightbox">
+            <div class="lightbox_content">
+                <img src="">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+{% endblock %}

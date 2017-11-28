@@ -1,0 +1,14 @@
+<nav class="nav">
+    <div class="nav__container container">
+        <div class="menu">
+            <ul class="nav__navbar is--active">
+                <li><a href="{{ path_for('home') }}">Home</a></li>
+                <li><a href="{{ path_for('product-lines') }}">Product Lines</a></li>
+                <li><a href="{{ path_for('catalog') }}">Catalog</a></li>
+                <li><a href="{{ path_for('sales-reps') }}">Sales Reps</a></li>
+                <li><a href="{{ path_for('contact') }}">Contact Us</a></li>
+            </ul>
+        </div>
+         {% include 'partials/hamburger.twig' %}
+    </div>
+</nav>

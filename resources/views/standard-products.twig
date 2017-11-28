@@ -1,0 +1,44 @@
+{% extends 'layouts/app.twig' %}
+{% block title %}Standard Products Division{% endblock %}
+{% block description %}At Summit Electric we serve as a Canadian distribution centre for many U.S Manufacturers. In doing so, we provide the customer service, warehousing and logistics for all of our U.S. partners. We pride ourselves in our commitment to maintaining extensive inventory levels and exceptional product knowledge. We sell exclusively to wholesale distributors and are dedicated to supporting the market through large inventories and industry leading order processing times.{% endblock %}
+
+{% block content %}
+
+<section class="page-head">
+    <div class="page-head__container container container--full">
+        <div class="page-head__content">
+            <h1>Standard Products Division</h1>
+        </div>
+    </div>
+
+    <div class="breadcrumbs-container container container--full">
+        <ul class="breadcrumbs">
+            <li><a href="{{ path_for('home') }}">Summit Electric Products Ltd</a></li>
+            <li>Standard Products Division</li>
+        </ul>
+    </div>
+</section>
+
+<section class="standard-products">
+    <div class="content-container">
+        <div class="standard-products__container container">
+            <div class="column-7">
+                <p>At Summit Electric we serve as a Canadian distribution centre for many U.S Manufacturers. In doing so, we provide the customer service, warehousing and logistics for all of our U.S. partners. We pride ourselves in our commitment to maintaining extensive inventory levels and exceptional product knowledge. We sell exclusively to wholesale distributors and are dedicated to supporting the market through large inventories and industry leading order processing times. </p>
+                <p><strong>To best serve our clients needs we offer same day shipping, minimum orders of only $10 and no minimum quantities.</strong></p>
+            </div>
+            <div class="column-5">
+                <img src="assets/img/featured.jpg" alt="Marathon fuse holders terminal blocks" class="modal__trigger">
+            </div>
+        </div>
+
+        <div class="lightbox">
+            <div class="lightbox_content">
+                <img src="">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
